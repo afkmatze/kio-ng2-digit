@@ -1,0 +1,7 @@
+<div class="kio-node">
+  <app-node-info [node]="node"></app-node-info>
+  <ng-container *ngIf="text">
+    <markdown *ngIf="text" #markdownContent [data]="text">      
+    </markdown>
+  </ng-container>
+</div>
