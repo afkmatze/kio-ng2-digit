@@ -1,7 +1,0 @@
-<div class="kio-node kio-fragment">
-  <app-node-info [node]="fragment"></app-node-info>
-  <div *ngFor="let child of children">
-    <app-kio-node *ngIf="child.type !== 'fragment'" [node]="child"></app-kio-node>
-    <app-kio-fragment *ngIf="child.type === 'fragment'" [fragment]="child"></app-kio-fragment>
-  </div>
-</div>
