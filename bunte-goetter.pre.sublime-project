@@ -1,0 +1,25 @@
+{
+	"folders":
+	[
+		{
+			"path": ".",
+      "folder_exclude_patterns": ["node_modules"]      
+		},
+    {
+      "path": "./node_modules/kio-ng2",
+      "name": "Kio Ng2"
+    },
+    {
+      "path": "./node_modules/kio-ng2-env",
+      "name": "Kio Ng2 Env"
+    },
+    {
+      "path": "./node_modules/kio-ng2-structure",
+      "name": "Kio Ng2 Structure"
+    },
+    {
+      "path": "./node_modules/kio-ng2-component-routing",
+      "name": "Kio Ng2 Component Routing"
+    }
+	]
+}
