@@ -1,0 +1,319 @@
+{
+  "name": "next-digitorial",
+  "rootModule": {
+    "name": "next-digitorial",
+    "filepath": "/Users/tEErohr/Projects/afkm/kio/kio-ng2-digit",
+    "version": "0.0.0",
+    "children": [
+      {
+        "name": "kio-ng2",
+        "filepath": "/Users/tEErohr/Projects/afkm/kio/kio-ng2-digit/node_modules/kio-ng2",
+        "version": "0.0.1",
+        "repository": {
+          "type": "git",
+          "url": "git@github.com:afkmatze/kio-ng2.git"
+        }
+      },
+      {
+        "name": "kio-ng2-cli",
+        "filepath": "/Users/tEErohr/Projects/afkm/kio/kio-ng2-digit/node_modules/kio-ng2-cli",
+        "version": "0.0.8",
+        "repository": {
+          "type": "git",
+          "url": "git+https://github.com/afkmatze/kio-ng2-cli.git"
+        }
+      },
+      {
+        "name": "kio-ng2-component-routing",
+        "filepath": "/Users/tEErohr/Projects/afkm/kio/kio-ng2-digit/node_modules/kio-ng2-component-routing",
+        "version": "0.0.4"
+      },
+      {
+        "name": "kio-ng2-env",
+        "filepath": "/Users/tEErohr/Projects/afkm/kio/kio-ng2-digit/node_modules/kio-ng2-env",
+        "version": "0.0.4",
+        "repository": {
+          "type": "git",
+          "url": "git+ssh://git@github.com/afkmatze/kio-ng2-env.git"
+        }
+      },
+      {
+        "name": "kio-ng2-structure",
+        "filepath": "/Users/tEErohr/Projects/afkm/kio/kio-ng2-digit/node_modules/kio-ng2-structure",
+        "version": "0.0.0",
+        "repository": {
+          "type": "git",
+          "url": "git+https://github.com/afkmatze/kio-ng2-structure.git"
+        }
+      }
+    ]
+  },
+  "lastBuild": {
+    "buildCount": 0,
+    "buildTime": "2017-05-14T22:10:16.947Z",
+    "buildMachine": {
+      "release": "16.5.0",
+      "type": "Darwin",
+      "username": "tEErohr",
+      "arch": "x64",
+      "host": "Macintosh.fritz.box"
+    },
+    "buildRepository": {
+      "branch": {
+        "current": true,
+        "name": "master",
+        "hash": "6a80317",
+        "message": "omit workspace file"
+      },
+      "commit": {
+        "hash": "6a80317",
+        "message": "omit workspace file"
+      }
+    }
+  },
+  "components": [
+    {
+      "type": "fragment",
+      "name": "AudioPlayer",
+      "modifiers": [
+        "audio"
+      ],
+      "childTypes": [
+        "txt",
+        "src"
+      ]
+    },
+    {
+      "type": "fragment",
+      "name": "BGR_Chapter6",
+      "childTypes": [
+        "fragment.img",
+        "fragment.meta",
+        "txt",
+        "txt",
+        "txt",
+        "fragment.img"
+      ],
+      "modifiers": []
+    },
+    {
+      "type": "fragment",
+      "name": "BigPic",
+      "childTypes": [
+        "txt",
+        "txt",
+        "src",
+        "src"
+      ],
+      "modifiers": []
+    },
+    {
+      "type": "fragment",
+      "name": "PanelChapter",
+      "childTypes": [
+        "txt",
+        "txt",
+        "fragment.img",
+        "txt"
+      ],
+      "modifiers": []
+    },
+    {
+      "type": "fragment",
+      "name": "Hint",
+      "childTypes": [
+        "txt",
+        "txt",
+        "fragment.img",
+        "fragment.img",
+        "txt",
+        "txt",
+        "txt"
+      ],
+      "modifiers": []
+    },
+    {
+      "type": "fragment",
+      "name": "LabeledImage",
+      "modifiers": [
+        "img"
+      ],
+      "childTypes": [
+        "src",
+        "txt",
+        "txt"
+      ]
+    },
+    {
+      "type": "fragment",
+      "name": "LabeledImageWithDescription",
+      "childTypes": [
+        "src",
+        "txt",
+        "txt",
+        "txt"
+      ],
+      "modifiers": []
+    },
+    {
+      "type": "fragment",
+      "name": "ImageGallery",
+      "childTypes": {
+        "either": [
+          {
+            "all": [
+              "fragment.img"
+            ]
+          },
+          {
+            "all": [
+              "fragment.img-descript"
+            ]
+          }
+        ]
+      },
+      "modifiers": []
+    },
+    {
+      "type": "fragment",
+      "name": "LabeledImageWithMophing",
+      "childTypes": {
+        "contains": [
+          "txt",
+          "txt",
+          "src",
+          "src"
+        ]
+      },
+      "modifiers": []
+    },
+    {
+      "type": "fragment",
+      "name": "Intro",
+      "childTypes": [
+        "txt",
+        "fragment.img"
+      ],
+      "modifiers": []
+    },
+    {
+      "type": "fragment",
+      "name": "MetaImage",
+      "modifiers": [
+        "metabox"
+      ],
+      "childTypes": {
+        "meta": [
+          "fragment.img-descript"
+        ]
+      }
+    },
+    {
+      "type": "fragment",
+      "name": "MetaBox",
+      "modifiers": [
+        "metabox"
+      ],
+      "childTypes": [
+        "txt",
+        "txt"
+      ]
+    },
+    {
+      "type": "fragment",
+      "name": "NBA",
+      "modifiers": [
+        "nba"
+      ],
+      "childTypes": [
+        "txt",
+        "src",
+        "txt",
+        "txt",
+        "txt"
+      ]
+    },
+    {
+      "type": "fragment",
+      "name": "NBAGroup",
+      "modifiers": [
+        "nba"
+      ],
+      "childTypes": {
+        "all": [
+          "fragment.nba"
+        ]
+      }
+    },
+    {
+      "type": "fragment",
+      "name": "Outro",
+      "modifiers": [
+        "outro"
+      ],
+      "childTypes": [
+        "txt"
+      ]
+    },
+    {
+      "type": "fragment",
+      "name": "Quote",
+      "childTypes": [
+        "txt",
+        "txt",
+        "txt"
+      ],
+      "modifiers": []
+    },
+    {
+      "type": "fragment",
+      "name": "SocialLinks",
+      "modifiers": [
+        "social"
+      ],
+      "childTypes": [
+        "txt"
+      ]
+    },
+    {
+      "type": "fragment",
+      "name": "TextAndAudio",
+      "childTypes": [
+        "txt",
+        "fragment.audio"
+      ],
+      "modifiers": []
+    },
+    {
+      "type": "fragment",
+      "name": "SingleColumn",
+      "childTypes": [
+        "txt"
+      ],
+      "modifiers": []
+    },
+    {
+      "type": "fragment",
+      "name": "TwoColumns",
+      "childTypes": [
+        "txt",
+        "txt"
+      ],
+      "modifiers": []
+    },
+    {
+      "type": "fragment",
+      "name": "TwoColumnsAndImage",
+      "modifiers": {
+        "either": [
+          "text-left",
+          "text-right"
+        ]
+      },
+      "childTypes": [
+        "txt",
+        "fragment.img"
+      ]
+    }
+  ]
+}
