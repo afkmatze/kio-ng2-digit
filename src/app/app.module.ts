@@ -7,9 +7,9 @@ import { LocaleService } from './i18n/locale.service'
 import { ContentMockingService } from 'kio-ng2-component-routing'
 import { KioNg2StructureModule } from 'kio-ng2-structure'
 import { MarkdownModule } from 'angular2-markdown';
+import envStore from 'kio-ng2-env/browser'
 
-declare const require:any
-const ModuleOptions = require('./bunte-goetter.components.json')
+console.log('envStore',envStore)
 
 import { AppComponent } from './app.component';
 
@@ -21,7 +21,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    KioNg2StructureModule.forRoot(ModuleOptions),
+    KioNg2StructureModule,
     MarkdownModule.forRoot()
   ],
   providers: [ContentMockingService],
