@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { KioBackendService } from './api/services/backend.service'
 import { KioQueryResult, KioPublicationModel } from 'kio-ng2'
 
 @Component({
@@ -9,7 +8,7 @@ import { KioQueryResult, KioPublicationModel } from 'kio-ng2'
 })
 export class AppComponent implements OnInit {
 
-  constructor(private backend:KioBackendService){}
+  constructor(){}
 
   title = 'app works!';
 
@@ -17,7 +16,7 @@ export class AppComponent implements OnInit {
 
 
   loadPublication(){
-    this.backend.load({
+    /*this.backend.load({
       cuid: this.publicationId,
       locale: 'en_US',
       headers: true,
@@ -26,7 +25,7 @@ export class AppComponent implements OnInit {
     }).subscribe ( result => {
       this.result = result
       this.publication = new KioPublicationModel(result.data)
-    } )
+    } )*/
   }
 
   result:KioQueryResult

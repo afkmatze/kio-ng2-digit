@@ -1,5 +1,4 @@
 import { Injectable, EventEmitter } from '@angular/core';
-import { Router, RoutesRecognized } from '@angular/router'
 import { Observable } from 'rxjs'
 import * as locales from './locales'
 import { TranslateService } from '@ngx-translate/core';
@@ -7,25 +6,11 @@ import { TranslateService } from '@ngx-translate/core';
 @Injectable()
 export class LocaleService {
 
-  constructor(private translateService:TranslateService, private router:Router) {
-    this.translateService.setDefaultLang(this.currentLang)
-    this.translateService.use(this.currentLang)
-
-    /*this.router.events
-      .filter ( (event:RoutesRecognized) => event instanceof RoutesRecognized )
-      .map ( event => {
-        console.log('LocaleService recognized route', event )
-        return event
-      } )
-      .map ( (event:RoutesRecognized) => this.localeForUrl(event.url.substr(1)) ) //remove leading slash
-      .distinct()
-      .subscribe ( locale => this.updateLocale(locale) )*/
-  }
+  constructor() {}
 
   localeForUrl ( url:string ) {
     return locales.supportedLocales.find ( locale => locales.shortenLocale(locale) === url ) || this.current
   }
-
 
   locales:Observable<string[]>=Observable.of(locales.supportedLocales)
   current:string=locales.browserLocale
@@ -59,7 +44,6 @@ export class LocaleService {
     }
 
     this.current = matchedLocale
-    this.translateService.use(this.currentLang)
     this.changes.emit(matchedLocale)
     return Observable.of(matchedLocale)
   }

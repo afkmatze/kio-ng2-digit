@@ -5,29 +5,26 @@ import { HttpModule } from '@angular/http';
 //import { KioBackendService } from './api/services/backend.service'
 import { LocaleService } from './i18n/locale.service'
 import { ContentMockingService } from 'kio-ng2-component-routing'
-import { KioNg2StructureModule, KioBackendService } from 'kio-ng2-structure'
+import { KioNg2StructureModule } from 'kio-ng2-structure'
 import { MarkdownModule } from 'angular2-markdown';
 
+declare const require:any
+const ModuleOptions = require('./bunte-goetter.components.json')
+
 import { AppComponent } from './app.component';
-import { KioNodeComponent } from './components/kio-node/kio-node.component';
-import { KioFragmentComponent } from './components/kio-fragment/kio-fragment.component';
-import { NodeInfoComponent } from './components/node-info/node-info.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    KioNodeComponent,
-    KioFragmentComponent,
-    NodeInfoComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    KioNg2StructureModule,
+    KioNg2StructureModule.forRoot(ModuleOptions),
     MarkdownModule.forRoot()
   ],
-  providers: [ContentMockingService, KioBackendService, LocaleService],
+  providers: [ContentMockingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
